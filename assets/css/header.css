@@ -52,8 +52,9 @@
 	text-decoration: none;
 	display: block;
 	padding: 7px 0 7px 25px;
-	font-size: 1.2em;
+	font-size: 0.9em;
 	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .swipe ul li:hover{
@@ -134,7 +135,7 @@
 
 .nav-flex li a{
 	text-decoration: none;	
-	font-size: 0.7em;
+	font-size: 0.6em;
 	border-bottom: 2px solid #f1f1f2;
 	padding: 0 0 3px 0;	
     color: #000;
@@ -142,7 +143,8 @@
     margin: 0 6px;
 	-webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;    
+    transition: all 0.3s ease;  
+    text-transform: uppercase;  
 }
 
 .nav-flex li a:hover{
@@ -187,7 +189,7 @@
 .header-social a{
 	background: #000;
 	color: #ffd400;	
-	font-size: 19px;
+	font-size: 18px;
 	float: left;
 	width: 30px;
 	height: 30px;
@@ -227,13 +229,13 @@
 @media(min-width:1327px){
 
 .nav-flex li a{
-	font-size: 0.9em;   
+	font-size: 0.75em;   
 }	
 
 .header-social a{
 	background: #000;
 	color: #ffd400;	
-	font-size: 23px;
+	font-size: 22px;
 	float: left;
 	width: 50px;
 	height: 50px;
