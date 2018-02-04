@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Olho Vivo Propaganda</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/menu-swipe/css/slide-and-swipe-menu.css">
+</head>
+<body>
+
+<header class="header header-flex">
+	
+	<div class="header-logo">
+		<a href="index.html">
+			<img src="assets/images/logo.png" alt="" class="img-fluid">
+			<span class="logo-titu">olho vivo propaganda</span>
+		</a>
+	</div>
+
+	<div class="header-menu">				  
+	    <ul class="nav-flex">
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#">Quem Somos</a></li>
+	      <li><a href="#">O que fazemos</a></li>
+	      <li><a href="#">Nossos trabalhos</a></li>
+	      <li><a href="#">Clientes</a></li>
+	      <li><a href="#">Contato</a></li>
+	    </ul>				
+	</div>
+
+	<div class="swipe">
+		<span class="swipe-title">Menu <a href="#" class="ssm-toggle-nav"><i class="fas fa-times"></i></a></span>
+		<ul>
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#">Quem Somos</a></li>
+	      <li><a href="#">O que fazemos</a></li>
+	      <li><a href="#">Nossos trabalhos</a></li>
+	      <li><a href="#">Clientes</a></li>
+	      <li><a href="#">Contato</a></li>
+	    </ul>	
+	</div>
+
+	<a href="#" class="ssm-toggle-nav">
+		<i class="fas fa-align-justify"></i>
+	</a>
+
+	<div class="header-social header-social-flex">
+		<a href=""><i class="fab fa-facebook-f"></i></a>
+		<a href=""><i class="fab fa-instagram"></i></a>
+		<a href=""><i class="fab fa-google-plus-g"></i></a>
+	</div>	
+
+</header>
+
+
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/bootstrap/js/popper.min.js"></script>
+<script src="assets/fontawesome/js/fontawesome-all.min.js"></script>
+<script src="assets/menu-swipe/js/jquery.slideandswipe.min.js"></script>
+<script src="assets/menu-swipe/js/jquery.touchSwipe.min.js"></script>
+
+<div class="ssm-overlay ssm-toggle-nav"></div>
+
+<script>
+    $(document).ready(function() {
+        $('.swipe').slideAndSwipe();
+    });
+</script>
+	
+</body>
+</html>
