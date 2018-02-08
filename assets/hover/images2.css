@@ -1,23 +1,29 @@
 .grid {
 	position: relative;
 	margin: 0 auto;
-	padding: 1em 0 4em;
+	/*padding: 1em 0 4em;*/
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /* Common style */
 .grid figure {
 	position: relative;
-	float: left;
+	/*float: left;*/
 	overflow: hidden;
 	margin: 10px 1%;
 	min-width: 300px;
 	max-width: 300px;
-	min-height: 200px;
-	max-height: 200px;
-	width: 48%;
+	min-height: 190px;
+	max-height: 190px;
+	width: 100%;
 	background: #000;
 	text-align: center;
 	cursor: pointer;
@@ -32,7 +38,7 @@
 }
 
 .grid figure figcaption {
-	padding: 2em;
+	/*padding: 2em;*/
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
@@ -82,6 +88,26 @@
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Individual effects */
 
@@ -1011,7 +1037,7 @@ figure.effect-zoe:hover p.icon-links a:focus {
 figure.effect-zoe p.description {
 	position: absolute;
 	bottom: 8em;
-	padding: 2em;
+	/*padding: 2em;*/
 	color: #fff;
 	text-transform: none;
 	font-size: 60%;
@@ -1143,15 +1169,45 @@ figure.effect-chico:hover p {
 	transform: scale(1);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 50em) {
 	.content {
 		padding: 0 10px;
 		text-align: center;
 	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
+
+	.grid{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+
+	.grid figure {
+		position: relative;
+		overflow: hidden;
+		margin: 10px 0;
+		min-width: 300px;
+		max-width: 300px;
+		min-height: 190px;
+		max-height: 190px;
+		width: 100%;
+		background: #000;
+		text-align: center;
+		cursor: pointer;
+	}
+
 }
