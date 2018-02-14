@@ -61,7 +61,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 0.5em;
-	margin: 20px 0 -10px 0;
+	margin: 120px 0 -10px 0;
 	font-weight: 800;
 	max-width: 550px;
 }
@@ -97,8 +97,8 @@
 .slider-txt{
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.1em;
-	margin: 60px 0 -25px 0;
+	font-size: 1em;
+	margin: 160px 0 -25px 0;
 	font-weight: 800;
 	max-width: 550px;
 }
@@ -125,9 +125,9 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 2.3em;
-	margin: 100px 0 -25px 0;
+	margin: 200px 0 -25px 0;
 	font-weight: 800;
-	max-width: 650px;
+	max-width: 700px;
 }
 
 
@@ -142,7 +142,7 @@
 
 
 .slider-txt{
-	margin: 150px 0 -25px 0;
+	margin: 260px 0 -25px 0;
 }
 
 .slider-play{
