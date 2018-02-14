@@ -293,6 +293,18 @@
 		
 
 
+/*MAPS*/
+
+.maps{
+	display: block;
+	padding: 0;
+	margin: 0 0 -7px 0;
+}
+
+.maps iframe{
+	max-height: 300px;
+}
+
 
 
 /*************************************************************************************************/
@@ -445,6 +457,13 @@
 	font-size: 0.8em;
 }
 
+
+
+/*MAPS*/
+
+.maps iframe{
+	max-height: 450px;
+}
 
 
 }
