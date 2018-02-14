@@ -26,24 +26,24 @@
 
 	<div class="header-menu">				  
 	    <ul class="nav-flex">
-	      <li><a href="#">Home</a></li>
-	      <li><a href="#">Quem Somos</a></li>
-	      <li><a href="#">O que fazemos</a></li>
-	      <li><a href="#">Nossos trabalhos</a></li>
-	      <li><a href="#">Clientes</a></li>
-	      <li><a href="#">Contato</a></li>
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="#quemsomos">Quem Somos</a></li>
+	      <li><a href="#oquefazemos">O que fazemos</a></li>
+	      <li><a href="#nossostrabalhos">Nossos trabalhos</a></li>
+	      <li><a href="#principaisclientes">Clientes</a></li>
+	      <li><a href="#contato">Contato</a></li>
 	    </ul>				
 	</div>
 
 	<div class="swipe">
 		<span class="swipe-title">Menu <a href="#" class="ssm-toggle-nav"><i class="fas fa-times"></i></a></span>
 		<ul>
-	      <li><a href="#">Home</a></li>
-	      <li><a href="#">Quem Somos</a></li>
-	      <li><a href="#">O que fazemos</a></li>
-	      <li><a href="#">Nossos trabalhos</a></li>
-	      <li><a href="#">Clientes</a></li>
-	      <li><a href="#">Contato</a></li>
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="#quemsomos">Quem Somos</a></li>
+	      <li><a href="#oquefazemos">O que fazemos</a></li>
+	      <li><a href="#nossostrabalhos">Nossos trabalhos</a></li>
+	      <li><a href="#principaisclientes">Clientes</a></li>
+	      <li><a href="#contato">Contato</a></li>
 	    </ul>	
 	</div>
 
@@ -89,7 +89,7 @@
 <div class="quem-somos">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12"><div id="quemsomos"></div>
 				<span class="quem-somos-titu">Quem somos</span>
 				<p>A Olho Vivo está no mercado há 13 anos, Durante toda esta caminhada, acompanhamos o crescimento de várias empresas por todo o Brasil nos enchendo de orgulho ao saber que contribuímos para isto, e como recompensa, estamos até hoje ao lado destas empresas fazendo o que de melhor sabemos. gerenciamentos estratégicos, mídias televisivas e propaganda! Resultado é o fruto de um trabalho sério e criativo, praticado todos os dias, sempre buscando a excelência e usando embasamento técnico, teórico e imaginário para compor todos os nossos trabalhos. Buscar o intangível e transformar em realidade, fazendo valer a nossa filosofia de trabalho que é transformar imaginação em resultados.</p>
 			</div>
@@ -105,7 +105,7 @@
 <div class="fazemos">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12"><div id="oquefazemos"></div>
 				<span class="fazemos-titu">o que fazemos</span>
 			</div>
 
@@ -151,7 +151,7 @@
 	</div>
 </div>
 
-<div class="trabalhos">
+<div class="trabalhos"><div id="nossostrabalhos"></div>
 		<span class="trabalhos-titu">Nossos Trabalhos</span>
 	<div class="container">
 		<div class="row">
@@ -256,7 +256,7 @@
 			</span>			
 		</div>
 	</div>
-</div>
+</div><div id="principaisclientes"></div>
 
 <span class="clientes-titu">Principais Clientes</span>
 
@@ -291,7 +291,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div><div id="contato"></div>
 
 
 <div class="contato">
@@ -372,32 +372,44 @@
 
 
 <script>
-    $(document).ready(function() {
-        $('.swipe').slideAndSwipe();
+
+/*MENU SWIPE*/	
+$(document).ready(function() {
+    $('.swipe').slideAndSwipe();
+});
 
 
+/*SLIDE PARCEIROS*/
+$(document).ready(function(){
+  $('.owl-parceiros').owlCarousel({
+center: true,
+items:1,
+loop:true,
+margin:10,
+autoplay:true,
+autoplayTimeout:5000,
+autoplayHoverPause:true,
+        responsive:{
+            600:{
+                items:5
+            }
+        }
     });
 
+  })
 
 
+/*MENU SCROLL*/
+$('ul li a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 1
+	}, 500);
+});
 
-    $(document).ready(function(){
-      $('.owl-parceiros').owlCarousel({
-    center: true,
-    items:1,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-            responsive:{
-                600:{
-                    items:5
-                }
-            }
-        });
-
-      })
 </script>
 	
 </body>
