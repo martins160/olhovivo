@@ -3,6 +3,8 @@
 	width: 100%;
 	height: 90px;
 	background: #f1f1f2;
+	position: fixed;
+	z-index: 200;
 }
 
 
